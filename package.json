@@ -1,0 +1,19 @@
+{
+  "name": "hostel-management",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["backend", "frontend", "e2e"],
+  "scripts": {
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "db:migrate": "npm run db:migrate -w backend",
+    "db:seed": "npm run db:seed -w backend",
+    "lint": "npm run lint -w backend && npm run lint -w frontend",
+    "typecheck": "npm run typecheck -w backend && npm run typecheck -w frontend",
+    "test:unit": "npm run test:unit -w backend && npm run test:unit -w frontend",
+    "test:integration": "npm run test:integration -w backend",
+    "test:e2e": "npm run test -w e2e",
+    "test:all": "npm run test:unit && npm run test:integration && npm run test:e2e",
+    "build": "npm run build -w backend && npm run build -w frontend"
+  }
+}
