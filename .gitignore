@@ -10,3 +10,6 @@ test-results
 e2e/.artifacts
 screenshots
 .DS_Store
+
+# Kept local for now; will be added later
+README.md
